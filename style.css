@@ -156,3 +156,41 @@
     font-size: 1rem;
     font-weight: 600;
 }
+
+/* responsive styles for small devices */
+
+@media screen and (max-width:576px) {
+    .nav-bar,
+    .nav-links,
+    .hero-travel{
+        flex-direction: column;
+    }
+
+    .hero-texts{
+        width: 300px;
+    }
+
+    .hero-title{
+        font-size: 1.3rem;
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+    
+    .hero-description{
+        font-size: 0.875rem;
+        margin-bottom: 32px;
+    }
+
+    .hero-travel{
+        width: 280px;
+        gap: 16px;
+    }
+
+    #details,
+    #place,
+    #time,
+    .find-now{
+    width: 250px;
+    height: 50px;
+    }
+}
