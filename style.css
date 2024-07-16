@@ -7,9 +7,11 @@
 /* my-variables */
 
 :root{
+    /* colors */
     --dark1: rgba(19, 19, 24, 1);
     --dark2: rgba(66, 66, 71, 1);
-    --orange: rgba(255, 84, 0, 1); 
+    --orange: rgba(255, 84, 0, 1);
+    --white: rgba(255, 255, 255, 1);
 }
 
 /* shared styles */
@@ -17,15 +19,17 @@
 /* hero-section styles */
 
 .hero-section{
-    border: 2px solid red;
     max-width: 1170px;
     margin: 0 auto;
 }
+
+/* nav-bar styles */
 
 .nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .logo{
@@ -40,7 +44,7 @@
     height: 50px;
 }
 
-.logo>h1{
+.logo>h2{
     color: var(--dark1);
     font-size: 2.25rem;
     font-weight: 800;
@@ -60,5 +64,95 @@
     text-decoration: none;
     color: var(--dark2);
     font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.active{
+    color: var(--orange);
+}
+
+.nav-link:hover{
+    color: var(--orange);
+    text-decoration: underline;
+    text-decoration-color: var(--orange);
+}
+
+/* hero-bg styles */
+
+.hero-bg{
+    height: 31.25rem;
+    border-radius: 1rem;
+    background-color: rgba(19, 19, 24, 0.6);
+    background-blend-mode: overlay;
+    background-image: url("Images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-texts, .hero-travel{
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-title{
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.hero-description{
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.hero-travel{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+}
+
+#details,
+#place,
+#time{
+    appearance: none;
+    width: 174px;
+    height: 46px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--white);
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#details:focus,
+#place:focus,
+#time:focus{
+    outline: 2px solid var(--orange);
+}
+
+.find-now{
+    width: 174px;
+    height: 46px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 1rem;
     font-weight: 600;
 }
