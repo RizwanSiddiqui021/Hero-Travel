@@ -168,10 +168,6 @@
     align-items: center;
 }
 
-.tours-texts{
-    
-}
-
 .tours-title{
     color: var(--dark1);
     font-size: 2.5rem;
@@ -186,10 +182,6 @@
     font-weight: 400;
     text-align: justify;
     margin-bottom: 24px;
-}
-
-.tours-list{
-
 }
 
 .tours-list-item{
@@ -213,6 +205,70 @@
 .tours-image{
     max-width: 540px;
     height: 550px;
+}
+
+/* destination-section styles */
+
+.destination-section{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.destination-texts{
+    text-align: center;
+}
+
+.destination-title{
+    color: var(--dark1);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.destination-description{
+    color: var(--dark3);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+.destination-row1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 24px auto;
+}
+
+.destination-row2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.destination-row3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 24px auto;
+}
+
+.country-card{
+    position: relative;
+}
+
+.country-card>img{
+    filter: brightness(70%);
+}
+
+.country-name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: 1.75rem;
+    font-weight: 800;
 }
 
 /* responsive styles for small devices */
@@ -275,4 +331,6 @@
     .tours-image>img{
         width: 100%;
     }
+
+    /* destination-section styles for small devices */
 }
