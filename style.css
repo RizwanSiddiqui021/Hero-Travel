@@ -211,13 +211,16 @@
 }
 
 .tours-image{
-    width: 540px;
+    max-width: 540px;
     height: 550px;
 }
 
 /* responsive styles for small devices */
 
 @media screen and (max-width:576px) {
+
+    /* hero-section styles for small devices */
+    
     .nav-bar,
     .nav-links,
     .hero-travel{
@@ -254,5 +257,22 @@
     .find-now{
     width: 250px;
     height: 50px;
+    }
+
+    /* tours-section styles for small devices */
+
+    .tours-section{
+        flex-direction: column;
+        gap: 30px;
+        margin: 30px auto;
+    }
+
+    .tours-texts{
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .tours-image>img{
+        width: 100%;
     }
 }
